@@ -1,0 +1,225 @@
+{
+	"variables": [],
+	"info": {
+		"name": "UnicornProject",
+		"_postman_id": "bb81b365-88e0-e426-c084-b6de64f259fd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Doctor List",
+			"request": {
+				"url": "https://localhost:44398/docterList",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmljMUBnbWFpbC5jb20iLCJyb2xlIjoiRG9jdG9ycyIsInVuaXF1ZV9uYW1lIjoiTWFuaSBjIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMyIsIm5iZiI6MTY2MDQ4MzEyNCwiZXhwIjoxNjYwNDg2NzI0LCJpYXQiOjE2NjA0ODMxMjR9.Q3icUa_sJ2z8TNr18reCIYF_TnRD-EJEAJNqfNvd0Ig",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Doctor details by ID",
+			"request": {
+				"url": "https://localhost:44398/doctors/3",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hbmljMUBnbWFpbC5jb20iLCJyb2xlIjoiRG9jdG9ycyIsInVuaXF1ZV9uYW1lIjoiTWFuaSBjIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMyIsIm5iZiI6MTY2MDQ4MzEyNCwiZXhwIjoxNjYwNDg2NzI0LCJpYXQiOjE2NjA0ODMxMjR9.Q3icUa_sJ2z8TNr18reCIYF_TnRD-EJEAJNqfNvd0Ig",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"url": "https://localhost:44398/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Email\":\"manic1@gmail.com\",\n\t\"Password\":\"Mani@123\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "register User",
+			"request": {
+				"url": "https://localhost:44398/api/users/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Name\": \"Mani c\", \n\t\"Email\" : \"manic1@gmail.com\", \n\t\"Adress\" : \"no 3 chennai\",\n\t\"Phone\": \"8056580796\", \n\t\"Password\" : \"Mani@123\",\n\t\"RoleId\":2\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "AvailableDoctorsList",
+			"request": {
+				"url": "doctors/availablelist",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel Appionment",
+			"request": {
+				"url": "https://localhost:44398/appionment/cancel/",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Book the appionement",
+			"request": {
+				"url": "https://localhost:44398/appionment",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"DoctorId\": 15, \n\t\"PatientId\": 4, \n\t\"StartDateTime\": \"2022-08-17T19:50:56.086Z\", \n\t\"EndDateTime\": \"2022-08-17T20:40:10.086Z\" \n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Doctorschedule",
+			"request": {
+				"url": "https://localhost:44398/doctors/15/slots",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "AppionmentdetailsBY ID",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "appionment/most",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Book the appionement copy",
+			"request": {
+				"url": "https://localhost:44398/appionment",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"DoctorId\": 15, \n\t\"PatientId\": 4, \n\t\"StartDateTime\": \"2022-08-17T19:50:56.086Z\", \n\t\"EndDateTime\": \"2022-08-17T20:40:10.086Z\" \n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Book the appionement copy",
+			"request": {
+				"url": "https://localhost:44398/appionment",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"DoctorId\": 15, \n\t\"PatientId\": 4, \n\t\"StartDateTime\": \"2022-08-17T19:50:56.086Z\", \n\t\"EndDateTime\": \"2022-08-17T20:40:10.086Z\" \n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "appionment/most",
+			"request": {
+				"url": "https://localhost:44398/appionment/most/2022-08-17T14:00:00.086Z",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNsaW5pY2FsMkBnbWFpbC5jb20iLCJyb2xlIjoiQ2xpbmljQWRtaW5zIiwidW5pcXVlX25hbWUiOiJjbGluaWNhbEFkbWluMiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL3NpZCI6IjI1IiwibmJmIjoxNjYwNTkzNDA5LCJleHAiOjE2NjA1OTcwMDksImlhdCI6MTY2MDU5MzQwOX0.6v2GZX4QmaNXq9yVsGs01qGZiYyX6StTdZEhMkC-ggQ",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"\": \"2022-08-17T14:00:00.086Z\" }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
